@@ -1,0 +1,8 @@
+-q -%i -w http://crownstack.com https://shyoph.com https://futugraph.com http://thedevcrew.com https://droom.at http://madesense.digital https://www.neoncoat.com https://www.agentbin.com http://igniteble.com http://www.up2code-nyc.com http://justlevelupusa.com https://www.athand.co.uk http://www.havefomo.com -O "/home/tits/websites/mobile random ang" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -r2 -%e2 -A250000000 -F "" -%F "" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u
+File generated automatically on Wed, 27 Dec 2017 23:42:33, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

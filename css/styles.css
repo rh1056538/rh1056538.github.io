@@ -1,0 +1,475 @@
+@font-face {
+	font-family: "TTNorms";
+	src: local(TTNorms Thin), url("http://madesense.digital/fonts/TT/TypeTypeTTNormsThin.ttf") format("truetype");
+	font-weight: 100;
+}
+@font-face {
+	font-family: "TTNorms";
+	src: local(TTNorms Light), url("http://madesense.digital/fonts/TT/TypeTypeTTNormsLight.ttf") format("truetype");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "TTNorms";
+	src: local(TTNorms Regular), url("http://madesense.digital/fonts/TT/TypeTypeTTNormsRegular.ttf") format("truetype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "TTNorms";
+	src: local(TTNorms Medium), url("http://madesense.digital/fonts/TT/TypeTypeTTNormsMedium.ttf") format("truetype");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "TTNorms";
+	src: local(TTNorms Bold), url("http://madesense.digital/fonts/TT/TypeTypeTTNormsBold.ttf") format("truetype");
+	font-weight: 600;
+}
+@font-face {
+	font-family: "TTNorms";
+	src: local(TTNorms ExtraBold), url("http://madesense.digital/fonts/TT/TypeTypeTTNormsExtraBold.ttf") format("truetype");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "TTNorms";
+	src: local(TTNorms Black), url("http://madesense.digital/fonts/TT/TypeTypeTTNormsBlack.ttf") format("truetype");
+	font-weight: 800;
+}
+::-moz-selection {
+	background-color: #fff;
+	color: #000;
+}
+::selection {
+	background-color: #fff;
+	color: #000;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "TTNorms", sans-serif;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	background: #000;
+	color: #fff;
+	min-width: 320px;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-backface-visibility: hidden;
+	text-rendering: optimizeLegibility; 
+}
+a,
+a:link:hover,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: #fff;
+}
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+.clearfix:after {
+	clear: both;
+}
+.clearAfter:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+.content {
+	margin: 0 100px;
+	height: 100%;
+	position: relative;
+	z-index: 10;
+}
+.content .title {
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	left: 100px;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+.content .title span {
+	font-weight: 300;
+	display: block;
+}
+.content .subtitle{
+	font-size: 14px;
+	margin-top: 30px;
+}
+.content .subtitle span{
+	display: block;
+	line-height: 1.5;
+}
+.content .colorHover {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	right: -100px;
+	top: 0;
+}
+.content .studies {
+	position: absolute;
+	right: 100px;
+	top: 50%;
+	-webkit-transform: translate(0, -100%);
+	-moz-transform: translate(0, -100%);
+	-ms-transform: translate(0, -100%);
+	-o-transform: translate(0, -100%);
+	transform: translate(0, -100%);
+}
+.content .studies .angle {
+	display: block;
+	text-transform: uppercase;
+	-webkit-transform: rotate(-90deg) translate(50%, 0);
+	-moz-transform: rotate(-90deg) translate(50%, 0);
+	-ms-transform: rotate(-90deg) translate(50%, 0);
+	-o-transform: rotate(-90deg) translate(50%, 0);
+	transform: rotate(-90deg) translate(50%, 0);
+	transform-origin: 100% 100%;
+}
+.content .studies .angle span {
+	letter-spacing: 1.77px;
+	font-weight: 400;
+	font-size: 15px;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 32px;
+}
+.content .studies .angle span:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 64px;
+	height: 2px;
+	background: #fff;
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.content .studies .angle:hover span:after {
+	width: 128px;
+}
+.content .studies .studiesHover {
+	padding: 100px 128px 100px 128px;
+	position: relative;
+	right: -100px;
+	cursor: pointer;
+}
+.content .footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-top: 1px solid #fff;
+	padding: 24px 4px;
+}
+.content .footer .left {
+	float: left;
+	width: 45%;
+}
+.content .footer .left .line:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.content .footer .middle {
+	float: left;
+}
+.content .footer .right {
+	float: right;
+}
+.content .footer .link {
+	margin-right: 32px;
+	color: #fff;
+	display: block;
+	float: left;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+.content .footer .link:last-child {
+	margin-right: 0;
+}
+.content .footer .line {
+	padding: 12px 0;
+}
+.content .footer .label {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 300;
+	font-size: 15px;
+}
+.content .footer .email,
+.content .footer .phone {
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+.content .footer:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.shuffleHover {
+	display: block;
+	width: 80px;
+}
+@media all and (max-width: 1199px) {
+	.content {
+		margin: 0 64px;
+	}
+	.content .title {
+		left: 64px;
+		font-size: 36px;
+	}
+	.content .studies .studiesHover {
+		padding-bottom: 64px;
+		right: -64px;
+	}
+	.content .colorHover {
+		right: -64px;
+	}
+	.content .studies {
+		right: 64px;
+	}
+}
+@media all and (max-width: 991px) {
+	.content .title {
+		font-size: 32px;
+	}
+	.content .subtitle {
+		font-size: 13px;
+		margin-top: 20px;
+	}
+	.content .studies {
+		font-size: 15px;
+	}
+	.content .footer {
+		font-size: 14px;
+		padding: 24px 0;
+	}
+	.content .footer .link {
+		margin-right: 24px;
+		font-size: 14px;
+	}
+	.content .footer .label {
+		font-size: 14px;
+	}
+	.content .footer .email,
+	.content .footer .phone {
+		font-size: 14px;
+	}
+}
+@media all and (max-width: 768px) {
+	.kaleidoscope {
+		position: fixed;
+	}
+	.content .title {
+		left: 0;
+		-webkit-transform: translate(0, -100%);
+		-moz-transform: translate(0, -100%);
+		-ms-transform: translate(0, -100%);
+		-o-transform: translate(0, -100%);
+		transform: translate(0, -100%);
+	}
+	.content .subtitle {
+		margin-top: 20px;
+	}
+	.content .colorHover {
+		position: relative;
+		width: 100%;
+		right: 0;
+	}
+	.content .studies {
+		right: auto;
+		left: 0;
+		-webkit-transform: translate(0, 100%);
+		-moz-transform: translate(0, 100%);
+		-ms-transform: translate(0, 100%);
+		-o-transform: translate(0, 100%);
+		transform: translate(0, 100%);
+	}
+	.content .studies .angle {
+		-webkit-transform: rotate(0) translate(0);
+		-moz-transform: rotate(0) translate(0);
+		-ms-transform: rotate(0) translate(0);
+		-o-transform: rotate(0) translate(0);
+		transform: rotate(0) translate(0);
+	}
+	.content .studies .angle span {
+		padding-bottom: 16px;
+	}
+	.content .studies .angle span:after {
+		left: 0;
+		width: 80px;
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+		transform: translate(0);
+	}
+	.content .studies .studiesHover {
+		padding: 0;
+		right: 0;
+	}
+	.content .footer {
+		padding: 0;
+		padding-top: 24px;
+	}
+	.content .footer .left,
+	.content .footer .middle,
+	.content .footer .right {
+		float: left;
+		clear: both;
+		padding-bottom: 28px;
+	}
+	.content .footer .line {
+		padding: 4px 0;
+	}
+	.content .footer .lineHover {
+		padding-bottom: 8px;
+	}
+	.content .footer .links {
+		width: 100%;
+	}
+}
+@media all and (max-width: 575px) {
+	.content {
+		margin: 0 32px;
+	}
+	.content .colorHover {
+		height: auto;
+	}
+	.content .title {
+		position: relative;
+		top: 0;
+		padding-top: 124px;
+		font-size: 28px;
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+		transform: translate(0);
+	}
+	.content .subtitle {
+		max-width: 280px;
+	}
+	.content .subtitle span {
+		display: inline;
+	}
+	.content .studies {
+		position: relative;
+		top: 0;
+		padding-top: 48px;
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+		transform: translate(0);
+	}
+}
+@media all and (max-width: 480px) {
+	.content .title {
+		font-size: 24px;
+	}
+	.content .title span {
+		/*display: inline;*/
+	}
+	.content .studies {
+		padding-top: 40px;
+	}
+}
+@media all and (max-width: 351px) {
+	.content .footer .link:nth-child(1),
+	.content .footer .link:nth-child(2) {
+		margin-bottom: 8px;
+	}
+}
+@media all and (max-height: 640px) {
+	.logo {
+		top: 64px;
+	}
+	.content .title {
+		padding-top: 128px;
+		top: 0;
+		left: 0;
+		position: relative;
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+		transform: translate(0);
+	}
+	.content .subtitle {
+		margin-top: 20px;
+	}
+	.content .colorHover{
+		height: auto;
+		position: relative;
+		width: 100%;
+		right: 0;
+	}
+	.content .studies {
+		margin-top: 32px;
+		margin-bottom: 64px;
+		padding-top: 20px;
+		top: 0;
+		right: 0;
+		position: relative;
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+		transform: translate(0);
+	}
+	.content .studies .angle {
+		-webkit-transform: rotate(0) translate(0);
+		-moz-transform: rotate(0) translate(0);
+		-ms-transform: rotate(0) translate(0);
+		-o-transform: rotate(0) translate(0);
+		transform: rotate(0) translate(0);
+	}
+	.content .studies .angle span {
+		padding-bottom: 16px;
+	}
+	.content .studies .angle span:after {
+		left: 0;
+		width: 80px;
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+		transform: translate(0);
+	}
+	.content .studies .studiesHover {
+		padding: 0;
+		right: 0;
+	}
+	.content .footer {
+		position: relative;
+	}
+}
